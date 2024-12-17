@@ -237,3 +237,9 @@ form button {
 form button:hover {
     background-color: #2980b9;
 }
+/* Green background effect */
+.green-background {
+    background-color: #2ecc71 !important; /* Green color */
+    color: white; /* White text color for better readability */
+    transition: background-color 0.3s ease;
+}

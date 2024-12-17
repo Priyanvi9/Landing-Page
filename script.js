@@ -19,14 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.getElementById("applyForm").addEventListener("submit", function (e) {
-    e.preventDefault(); // Form ke default behavior ko rokta hai
 
-    // Form ko hide karte hain
-    document.querySelector(".apply-now").style.display = "none";
 
-    // Confirmation message ko show karte hain
+
+document.getElementById("applyForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    document.body.classList.add("green-background");
+
+    document.getElementById("apply-now").style.display = "none";
     document.getElementById("confirmation").style.display = "block";
-})
-
-
+    
+    // Optionally, you can reset the form here if required
+    // document.getElementById("applyForm").reset();
+});
