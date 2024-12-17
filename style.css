@@ -1,12 +1,13 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;  /* More modern and elegant font */
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #f4f6f9;  /* Light grey background */
+    background-color: #f4f6f9;
     color: #333;
     line-height: 1.6;
     display: flex;
@@ -14,135 +15,121 @@ body {
     min-height: 100vh;
 }
 
-.navbar {
+header.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #2c3e50; 
+    padding: 20px;
+    background-color: #2c3e50;
+    flex-wrap: wrap;
 }
 
 .navbar .logo {
-    font-size: 2.5rem;
-    color: #ecf0f1;  
+    font-size: 1.8rem;
+    color: #ecf0f1;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
 .navbar nav a {
-    margin-left: 30px;
     text-decoration: none;
     color: #ecf0f1;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    margin-left: 15px;
+    transition: color 0.3s;
 }
 
 .navbar nav a:hover {
-    color: #3498db;  
+    color: #3498db;
 }
+
 .hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 40px;
-    background-color: #3498db; 
+    padding: 40px;
+    background-color: #3498db;
     color: white;
-    position: relative;
 }
 
 .hero-content {
+    flex: 1;
     max-width: 600px;
     text-align: left;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-}
-
-.hero span {
-    color: #ecf0f1;
+    font-size: 2.5rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 20px;
 }
 
-.hero .buttons {
-    margin-top: 20px;
+.hero-illustration img {
+    max-width: 100%;
+    width: 300px;
+    animation: slideIn 1s ease-in-out;
 }
 
-.hero .btn {
-    padding: 14px 28px;
-    margin-right: 15px;
+.buttons .btn {
+    padding: 10px 20px;
     background-color: #2ecc71;
     color: white;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-.hero .btn:hover {
-    background-color: #27ae60;  
-    transform: scale(1.05); 
+.buttons .btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
 }
 
 .highlights {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 60px 40px;
-    background-color: #ecf0f1;  
+    padding: 40px;
+    background-color: #ecf0f1;
 }
 
 .highlight {
+    width: 100%;
+    max-width: 250px;
     text-align: center;
-    width: 30%;
-    transition: transform 0.3s ease;
-}
-
-.highlight:hover {
-    transform: translateY(-10px); 
-}
-
-.highlight h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.highlight p {
-    font-size: 1rem;
-    color: #7f8c8d;
-}
-
-.qualifications {
-    padding: 60px 40px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.qualifications h2 {
-    font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
+.qualifications {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.qualifications h2 {
+    font-size: 1.8rem;
+}
+
 .qualifications ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .qualifications li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #7f8c8d;
+    font-size: 1rem;
+    margin: 5px 0;
 }
 
+/* Footer */
 .footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .footer a {
@@ -154,11 +141,7 @@ body {
     text-decoration: underline;
 }
 
-.hero-illustration img {
-    max-width: 250px;  
-    animation: slideIn 1s ease-in-out;
-}
-
+/* Animations */
 @keyframes slideIn {
     0% {
         transform: translateX(50px);
@@ -170,115 +153,36 @@ body {
     }
 }
 
-.learn-more {
-    padding: 50px 20px;
-    background-color: #f8fafc;
-    text-align: center;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.learn-more h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
+    .navbar nav a {
+        display: block;
+        margin: 10px 0;
+    }
 
-.learn-more p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.learn-more ul {
-    list-style-type: disc;
-    text-align: left;
-    margin: 0 auto;
-    padding-left: 20px;
-    max-width: 600px;
-}
+    .hero-content {
+        margin-bottom: 20px;
+    }
 
-.learn-more .cta-buttons {
-    margin-top: 30px;
-}
+    .hero h1 {
+        font-size: 2rem;
+    }
 
-.learn-more .cta-buttons .btn {
-    margin: 10px;
-}
+    .highlight {
+        max-width: 100%;
+    }
 
-.apply-now {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f8fafc;
+    .buttons .btn {
+        margin: 10px 0;
+    }
 }
-
-.apply-now h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.apply-now p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #555;
-}
-
-form input {
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-form button {
-    padding: 16px 28px;
-    background-color: #6a11cb;  
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-form button:hover {
-    background-color: #5a0db3; 
-    transform: scale(1.05); 
-}
-
-.confirmation {
-    display: none;
-    text-align: center;
-    background-color: #28a745;
-    color: white;
-    padding: 50px 20px;
-}
-
-.confirmation h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.confirmation p {
-    font-size: 1.2rem;
-}
-
-footer {
-    margin-top: auto;
-}
-

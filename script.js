@@ -18,13 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.getElementById("applyForm").addEventListener("submit", function(event) {
-    event.preventDefault();
 
-    document.body.style.backgroundColor = "#28a745"; 
+document.getElementById("applyForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Form ke default behavior ko rokta hai
 
-    document.getElementById("apply-now").style.display = "none";
+    // Form ko hide karte hain
+    document.querySelector(".apply-now").style.display = "none";
 
+    // Confirmation message ko show karte hain
     document.getElementById("confirmation").style.display = "block";
-});
+})
+
 
