@@ -188,23 +188,17 @@ header.navbar {
 }
 
 
-/* Apply Now Section Styles */
+/* Apply Now Section */
 .apply-now {
     padding: 50px 20px;
-    background-color: #f8f9fa; /* Light grey background */
+    background-color: #f8f9fa; /* Light grey */
     text-align: center;
 }
 
 .apply-now h1 {
     font-size: 2.5rem;
-    color: #2c3e50; /* Dark blue color */
+    color: #2c3e50;
     margin-bottom: 20px;
-}
-
-.apply-now p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
 }
 
 form {
@@ -212,79 +206,34 @@ form {
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
-    background-color: #fff;
+    background: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     text-align: left;
     margin: 10px 0 5px;
-    font-weight: 600;
-    color: #444;
+    font-weight: bold;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="file"] {
+form input {
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-form input:focus {
-    border-color: #3498db;
-    outline: none;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
 form button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #3498db; /* Blue button */
+    background-color: #3498db;
     color: white;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background-color: #2980b9; /* Darker blue */
-    transform: scale(1.05);
-}
-
-/* Confirmation Section */
-.confirmation {
-    display: none; /* Hide by default */
-    text-align: center;
-    background-color: #2ecc71; /* Green background */
-    color: white;
-    padding: 40px;
-}
-
-.confirmation h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.confirmation p {
-    font-size: 1.1rem;
-}
-@media (max-width: 768px) {
-    .apply-now h1 {
-        font-size: 2rem;
-    }
-
-    form {
-        padding: 15px;
-    }
-
-    form button {
-        font-size: 1rem;
-    }
+    background-color: #2980b9;
 }
