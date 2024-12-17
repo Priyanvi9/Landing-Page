@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply Now | Web Developer Internship | Cognifyz Technologies</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .green-background {
+    background-color: #2ecc71 !important; /* Green color */
+    color: white; /* White text color for better readability */
+    transition: background-color 0.3s ease;
+}
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -23,18 +30,19 @@
         <form id="applyForm">
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" required>
-    
+        
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required>
-    
+        
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required>
-    
+        
             <label for="resume">Upload Resume:</label>
             <input type="file" id="resume" name="resume" required>
-    
-            <button type="submit" class="btn btn-primary">Submit Application</button>
+        
+            <button type="submit">Submit Application</button>
         </form>
+        
     </section>
     
     <section class="confirmation" id="confirmation" style="display: none;">
