@@ -14,18 +14,17 @@ body {
     min-height: 100vh;
 }
 
-/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #2c3e50;  /* Dark background */
+    background-color: #2c3e50; 
 }
 
 .navbar .logo {
     font-size: 2.5rem;
-    color: #ecf0f1;  /* Light text color */
+    color: #ecf0f1;  
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -39,16 +38,14 @@ body {
 }
 
 .navbar nav a:hover {
-    color: #3498db;  /* Blue hover effect */
+    color: #3498db;  
 }
-
-/* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 40px;
-    background-color: #3498db;  /* Eye-catching blue */
+    background-color: #3498db; 
     color: white;
     position: relative;
 }
@@ -79,7 +76,7 @@ body {
 .hero .btn {
     padding: 14px 28px;
     margin-right: 15px;
-    background-color: #2ecc71;  /* Green buttons */
+    background-color: #2ecc71;
     color: white;
     border: none;
     border-radius: 5px;
@@ -88,16 +85,15 @@ body {
 }
 
 .hero .btn:hover {
-    background-color: #27ae60;  /* Darker green on hover */
-    transform: scale(1.05);  /* Slight scale-up effect */
+    background-color: #27ae60;  
+    transform: scale(1.05); 
 }
 
-/* Highlights Section */
 .highlights {
     display: flex;
     justify-content: space-around;
     padding: 60px 40px;
-    background-color: #ecf0f1;  /* Light background for this section */
+    background-color: #ecf0f1;  
 }
 
 .highlight {
@@ -107,7 +103,7 @@ body {
 }
 
 .highlight:hover {
-    transform: translateY(-10px);  /* Lift the card on hover */
+    transform: translateY(-10px); 
 }
 
 .highlight h2 {
@@ -120,7 +116,6 @@ body {
     color: #7f8c8d;
 }
 
-/* Qualifications Section */
 .qualifications {
     padding: 60px 40px;
     background-color: #ffffff;
@@ -143,9 +138,8 @@ body {
     color: #7f8c8d;
 }
 
-/* Footer Section */
 .footer {
-    background-color: #2c3e50;  /* Matching footer color */
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 20px;
@@ -160,9 +154,8 @@ body {
     text-decoration: underline;
 }
 
-/* Hero Image Animation */
 .hero-illustration img {
-    max-width: 250px;  /* Smaller size for the rocket */
+    max-width: 250px;  
     animation: slideIn 1s ease-in-out;
 }
 
@@ -177,7 +170,6 @@ body {
     }
 }
 
-/* Learn More Section */
 .learn-more {
     padding: 50px 20px;
     background-color: #f8fafc;
@@ -211,7 +203,6 @@ body {
     margin: 10px;
 }
 
-/* Apply Now Form */
 .apply-now {
     padding: 50px 20px;
     text-align: center;
@@ -256,7 +247,7 @@ form input {
 
 form button {
     padding: 16px 28px;
-    background-color: #6a11cb;  /* Purple button */
+    background-color: #6a11cb;  
     color: white;
     border: none;
     border-radius: 5px;
@@ -266,11 +257,10 @@ form button {
 }
 
 form button:hover {
-    background-color: #5a0db3;  /* Darker purple */
-    transform: scale(1.05);  /* Scale-up effect */
+    background-color: #5a0db3; 
+    transform: scale(1.05); 
 }
 
-/* Confirmation Message */
 .confirmation {
     display: none;
     text-align: center;
@@ -288,7 +278,6 @@ form button:hover {
     font-size: 1.2rem;
 }
 
-/* Ensure Footer stays at the bottom of the page */
 footer {
     margin-top: auto;
 }
