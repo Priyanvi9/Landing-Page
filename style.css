@@ -40,7 +40,6 @@ body {
 .navbar nav a:hover {
     color: #3498db;  
 }
-
 .hero {
     display: flex;
     justify-content: space-between;
@@ -49,7 +48,6 @@ body {
     background-color: #3498db; 
     color: white;
     position: relative;
-    flex-wrap: wrap;
 }
 
 .hero-content {
@@ -96,14 +94,12 @@ body {
     justify-content: space-around;
     padding: 60px 40px;
     background-color: #ecf0f1;  
-    flex-wrap: wrap;
 }
 
 .highlight {
     text-align: center;
     width: 30%;
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
 }
 
 .highlight:hover {
@@ -286,41 +282,3 @@ footer {
     margin-top: auto;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar nav a {
-        margin: 10px 0;
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .highlights {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .highlight {
-        width: 80%;
-    }
-
-    .apply-now, .learn-more, .qualifications {
-        padding: 30px 20px;
-    }
-
-    form {
-        width: 90%;
-    }
-}
